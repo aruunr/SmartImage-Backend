@@ -22,7 +22,7 @@ app.use(bodyParser.json())
 app.use(cors())
         
 
-
+app.get('/', (req,res) => {res.send('working')})
 //Image Entries(Rank)--------------
 app.put('/image',  (req, res) => {
 pg('users')
