@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 app.use(cors())
         
-app.listen(process.env.PORT, () => {   
+app.listen(process.env.PORT || 3000, () => {   
 });
 
 //Image Entries(Rank)--------------
