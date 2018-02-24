@@ -21,8 +21,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 app.use(cors())
         
-app.listen(process.env.PORT || 3000, () => {   
-});
+
 
 //Image Entries(Rank)--------------
 app.put('/image',  (req, res) => {
@@ -43,4 +42,6 @@ app.post('/register', (req,res) => {register.handleUserRegistration(req,res,pg, 
 app.get('/profile/:id', (req, res) => {  
    res.send('hello world');
 })
-         
+
+app.listen(process.env.PORT || 3000, () => {   
+});
