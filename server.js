@@ -9,7 +9,7 @@ const signin = require('./controllers/signin');
 const pg = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : 'postgresql-fitted-91328',
     user : 'arun',
     password : '',
     database : 'arun'
